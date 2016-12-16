@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 電腦輔助設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2016-12-16T11:00:00+08:00</updated><entry><title>w14</title><link href="./w14.html" rel="alternate"></link><published>2016-12-16T11:00:00+08:00</published><updated>2016-12-16T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-12-16:./w14.html</id><summary type="html">&lt;p&gt;w14&lt;/p&gt;
+
+
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- ch01 基本的列印與輸入函式 --&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document
+from browser import alert
+def get_input(ev):
+    the_input= input("請輸入")
+    alert("輸入為:"+str(the_input))
+
+document['ch01'].bind('click',get_input)
+&lt;/script&gt;
+
+&lt;p&gt;&lt;button id="ch01"&gt;取輸入後, 列印出來&lt;/button&gt;
+&lt;/script&gt;&lt;/p&gt;</summary><category term="cp"></category></entry></feed>
